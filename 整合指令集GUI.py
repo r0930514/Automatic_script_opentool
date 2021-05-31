@@ -21,7 +21,6 @@ win.resizable(0,0)
 
 #Command函數設定
 def com_funtion (t):
-    information.config(fg="black",text="執行開始，請前往終端機")
     com = dirs_t[t] 
     os.system("./%s" %(com))
     exit()
@@ -45,7 +44,7 @@ exitbtn.config(command = COM)
 exitbtn.pack()
 
 #文字提示
-information = tk.Label(fg="black",text="請選擇要執行的項目")
+information = tk.Label(fg="black",text="請選擇要執行的項目\n並且於終端機中執行")
 information.pack()
 
 #視窗常駐（需要在最底下）

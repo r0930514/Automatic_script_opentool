@@ -10,8 +10,6 @@ path = './所有SH' #存取位置
 dirs = os.listdir(path) #將路徑中的資料存入一個陣列中 （資料0、 資料1)
 dirs_t = os.listdir(path)
 dirs_count = len(dirs) #這個資料夾中有多少個文件
-print (dirs)
-print(dirs_t)
 os.chdir(path) #移動到指定的資料夾
 
 #主視窗設定
